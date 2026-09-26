@@ -63,8 +63,8 @@ import json
 import os
 import re
 import sys
-from typing import Any, Dict, List, Optional
 from datetime import datetime, timezone
+from typing import Any
 
 import yaml
 
@@ -124,11 +124,11 @@ def get_or_create(endpoint: Any, defaults: Any, **lookup: Any) -> Any:
 
 
 class Importer:
-    def __init__(self, nb: Any, manifest: Any, dry_run: Any = False) -> None:
+    def __init__(self, nb: Any, dry_run: Any = False) -> None:
         self.nb = nb
         self.dry_run = dry_run
         self.stats = {"created": 0, "skipped": 0, "updated": 0, "errors": 0}
-        self._cache: Dict[Any, Any] = {}
+        self._cache: dict[Any, Any] = {}
         # Nhật ký mọi object được TẠO MỚI trong lần chạy này (không ghi object
         # đã tồn tại từ trước hoặc chỉ bị update) — dùng để rollback chính xác.
         self.manifest = {
@@ -598,7 +598,7 @@ def main() -> None:
             True  # đổi thành False nếu NetBox dùng cert tự ký (không khuyến khích)
         )
 
-    importer = Importer(nb, manifest=manifest, dry_run=args.dry_run) # type: ignore
+    importer = Importer(nb, dry_run=args.dry_run)
 
     for d in devices:
         importer.import_device(d)

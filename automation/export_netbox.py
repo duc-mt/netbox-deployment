@@ -26,7 +26,7 @@ import argparse
 import ipaddress
 import os
 import sys
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 import yaml
 
@@ -47,7 +47,7 @@ ROLE_TO_KIND = {
 
 def parse_comments(comments: Any) -> Any:
     """Tách lại các field lạ đã bị gộp vào Comments (mỗi dòng "key: value")."""
-    extra: Dict[str, Any] = {}
+    extra: dict[str, Any] = {}
     if not comments:
         return extra
     for line in comments.splitlines():

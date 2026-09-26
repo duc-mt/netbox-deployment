@@ -1,11 +1,11 @@
-import pytest
-from unittest.mock import MagicMock, patch
-import sys
 import os
+import sys
+from unittest.mock import MagicMock, patch
 
 # Ensure the automation directory is in the path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from automation.export_netbox import parse_comments
+
 
 def test_parse_comments_empty():
     assert parse_comments("") == {}

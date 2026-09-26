@@ -36,7 +36,7 @@ def _environ_get_and_map(
 ) -> Any | None:
     env_value = environ.get(variable_name, default)
 
-    if env_value == None:
+    if env_value is None:
         return env_value
 
     if not map_fn:
@@ -45,9 +45,12 @@ def _environ_get_and_map(
     return map_fn(env_value)
 
 
-_AS_BOOL = lambda value: value.lower() == 'true'
-_AS_INT = lambda value: int(value)
-_AS_LIST = lambda value: list(filter(None, value.split(' ')))
+def _AS_BOOL(value: str) -> bool:
+    return value.lower() == 'true'
+def _AS_INT(value: str) -> int:
+    return int(value)
+def _AS_LIST(value: str) -> list:
+    return list(filter(None, value.split(' ')))
 
 _BASE_DIR = dirname(dirname(abspath(__file__)))
 

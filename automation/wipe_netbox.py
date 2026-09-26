@@ -22,7 +22,6 @@ Cách dùng:
 import argparse
 import os
 import sys
-from typing import Any, Dict, List, Optional
 
 try:
     import pynetbox

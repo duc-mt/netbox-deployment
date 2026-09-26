@@ -11,7 +11,7 @@ def __getattr__(name):
     for config in _loaded_configurations:
         try:
             return getattr(config, name)
-        except:
+        except Exception:
             pass
     raise AttributeError
 
