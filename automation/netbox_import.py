@@ -63,6 +63,7 @@ import json
 import os
 import re
 import sys
+from typing import Any, Dict, List, Optional
 from datetime import datetime, timezone
 
 import yaml
@@ -107,13 +108,13 @@ KNOWN_FIELDS = {
 }
 
 
-def slugify(text):
+def slugify(text: Any) -> Any:
     text = text.strip().lower()
     text = re.sub(r"[^a-z0-9]+", "-", text)
     return re.sub(r"-+", "-", text).strip("-")
 
 
-def get_or_create(endpoint, defaults, **lookup):
+def get_or_create(endpoint: Any, defaults: Any, **lookup: Any) -> Any:
     obj = endpoint.get(**lookup)
     if obj:
         return obj, False
@@ -123,11 +124,11 @@ def get_or_create(endpoint, defaults, **lookup):
 
 
 class Importer:
-    def __init__(self, nb, dry_run=False):
+    def __init__(self, nb: Any, manifest: Any, dry_run: Any = False) -> None:
         self.nb = nb
         self.dry_run = dry_run
         self.stats = {"created": 0, "skipped": 0, "updated": 0, "errors": 0}
-        self._cache = {}
+        self._cache: Dict[Any, Any] = {}
         # Nhật ký mọi object được TẠO MỚI trong lần chạy này (không ghi object
         # đã tồn tại từ trước hoặc chỉ bị update) — dùng để rollback chính xác.
         self.manifest = {
@@ -146,21 +147,21 @@ class Importer:
             "vlans": [],
         }
 
-    def log(self, msg):
+    def log(self, msg: Any) -> Any:
         print(msg)
 
-    def record(self, category, obj):
+    def record(self, category: Any, obj: Any) -> Any:
         if obj is not None:
-            self.manifest[category].append({"id": obj.id, "name": str(obj)})
+            self.manifest[category].append({"id": obj.id, "name": str(obj)}) # type: ignore
 
-    def save_manifest(self, path):
+    def save_manifest(self, path: Any) -> Any:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(self.manifest, f, ensure_ascii=False, indent=2)
         return path
 
     # ---- lookups / creation helpers -------------------------------------
 
-    def get_site(self, code):
+    def get_site(self, code: Any) -> Any:
         key = ("site", code)
         if key in self._cache:
             return self._cache[key]
@@ -179,7 +180,7 @@ class Importer:
         self._cache[key] = site
         return site
 
-    def get_location(self, location_name, site):
+    def get_location(self, location_name: Any, site: Any) -> Any:
         if not location_name or not site:
             return None
         key = ("location", site.id, location_name)
@@ -206,7 +207,7 @@ class Importer:
         self._cache[key] = location
         return location
 
-    def get_manufacturer(self, vendor):
+    def get_manufacturer(self, vendor: Any) -> Any:
         key = ("mfr", vendor)
         if key in self._cache:
             return self._cache[key]
@@ -226,7 +227,7 @@ class Importer:
         self._cache[key] = mfr
         return mfr
 
-    def get_role(self, kind):
+    def get_role(self, kind: Any) -> Any:
         key = ("role", kind)
         if key in self._cache:
             return self._cache[key]
@@ -246,7 +247,7 @@ class Importer:
         self._cache[key] = role
         return role
 
-    def get_platform(self, os_name):
+    def get_platform(self, os_name: Any) -> Any:
         if not os_name:
             return None
         key = ("platform", os_name)
@@ -267,7 +268,7 @@ class Importer:
         self._cache[key] = platform
         return platform
 
-    def get_device_type(self, vendor, model, kind, manufacturer):
+    def get_device_type(self, vendor: Any, model: Any, kind: Any, manufacturer: Any) -> Any:
         model_name = model or f"Generic-{vendor}-{kind}"
         key = ("dtype", vendor, model_name)
         if key in self._cache:
@@ -302,7 +303,7 @@ class Importer:
         self._cache[key] = dtype
         return dtype
 
-    def get_rack(self, rack_name, site, location=None):
+    def get_rack(self, rack_name: Any, site: Any, location: Any = None) -> Any:
         if not rack_name:
             return None
         key = ("rack", site.id if site else None, rack_name)
@@ -345,7 +346,7 @@ class Importer:
 
     # ---- main per-device flow -------------------------------------------
 
-    def build_comments(self, d):
+    def build_comments(self, d: Any) -> Any:
         # Tự động gộp bất kỳ field nào trong YAML mà chưa có ô tương ứng
         # trên NetBox (KNOWN_FIELDS) — để không mất dữ liệu nếu file có
         # thêm cột mới sau này mà script chưa kịp cập nhật.
@@ -356,7 +357,7 @@ class Importer:
         ]
         return "\n".join(extra)
 
-    def import_device(self, d):
+    def import_device(self, d: Any) -> Any:
         name = d.get("name")
         kind = d.get("kind")
         vendor = d.get("vendor")
@@ -441,7 +442,7 @@ class Importer:
             self.log(f"  ! Lỗi khi xử lý {name}: {e}")
             self.stats["errors"] += 1
 
-    def attach_ip(self, device, ip, mgmt_interface):
+    def attach_ip(self, device: Any, ip: Any, mgmt_interface: Any) -> Any:
         iface_name = mgmt_interface or "mgmt0"
         iface = self.nb.dcim.interfaces.get(device_id=device.id, name=iface_name)
         if not iface:
@@ -502,7 +503,7 @@ class Importer:
 
     # ---- subnet / VLAN (IPAM) --------------------------------------------
 
-    def import_subnet(self, entry):
+    def import_subnet(self, entry: Any) -> Any:
         prefix_val = entry.get("prefix")
         vlan_id = entry.get("vlan_id")
         vlan_name = entry.get("vlan_name") or (f"VLAN{vlan_id}" if vlan_id else None)
@@ -569,7 +570,7 @@ class Importer:
             self.stats["errors"] += 1
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("yaml_file", help="Đường dẫn tới file YAML (devices + subnets)")
     parser.add_argument(
@@ -597,7 +598,7 @@ def main():
             True  # đổi thành False nếu NetBox dùng cert tự ký (không khuyến khích)
         )
 
-    importer = Importer(nb, dry_run=args.dry_run)
+    importer = Importer(nb, manifest=manifest, dry_run=args.dry_run) # type: ignore
 
     for d in devices:
         importer.import_device(d)

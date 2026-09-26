@@ -1,5 +1,9 @@
 # NetBox Unified Deployment
 
+[![CI Pipeline](https://github.com/duc-mt/netbox-deployment/actions/workflows/ci.yml/badge.svg)](https://github.com/duc-mt/netbox-deployment/actions/workflows/ci.yml)
+[![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://pypi.org/project/netbox-deployment/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This repository provides a self-contained, highly portable deployment for **NetBox**, combining the standard Docker deployment with custom data import/export automation scripts. It is designed to be easily deployed in any new environment.
 
 ## 🚀 Quick Start

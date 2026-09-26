@@ -24,6 +24,7 @@ import argparse
 import json
 import os
 import sys
+from typing import Any, Dict, List, Optional
 
 try:
     import pynetbox
@@ -47,7 +48,7 @@ ORDER = [
 ]
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("manifest_file")
     parser.add_argument("--dry-run", action="store_true")
@@ -79,7 +80,7 @@ def main():
                 print(f"  [dry-run] sẽ xoá {label}")
                 continue
             try:
-                obj = endpoint.get(item["id"])
+                obj = endpoint.get(item["id"]) # type: ignore
                 if obj is None:
                     print(f"  ~ Không tìm thấy (có thể đã bị xoá trước đó): {label}")
                     continue

@@ -14,3 +14,16 @@ configuration/ldap/*
 super-linter.log
 env/netbox.env
 automation/Device-Type-Library-Import/
+
+# Python modern tooling
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+coverage.xml
+htmlcov/
+.coverage
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc

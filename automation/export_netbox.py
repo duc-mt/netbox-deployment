@@ -26,6 +26,7 @@ import argparse
 import ipaddress
 import os
 import sys
+from typing import Any, Dict, List, Optional
 
 import yaml
 
@@ -44,9 +45,9 @@ ROLE_TO_KIND = {
 }
 
 
-def parse_comments(comments):
+def parse_comments(comments: Any) -> Any:
     """Tách lại các field lạ đã bị gộp vào Comments (mỗi dòng "key: value")."""
-    extra = {}
+    extra: Dict[str, Any] = {}
     if not comments:
         return extra
     for line in comments.splitlines():
@@ -56,7 +57,7 @@ def parse_comments(comments):
     return extra
 
 
-def mgmt_interface_name(nb, device):
+def mgmt_interface_name(nb: Any, device: Any) -> Any:
     """Tìm tên interface đang giữ primary IPv4 của device (mặc định 'mgmt0')."""
     if not device.primary_ip4:
         return None
@@ -66,7 +67,7 @@ def mgmt_interface_name(nb, device):
     return None
 
 
-def export_device(nb, device):
+def export_device(nb: Any, device: Any) -> Any:
     d = {}
     d["kind"] = ROLE_TO_KIND.get(str(device.role), str(device.role).lower())
     d["vendor"] = device.device_type.manufacturer.name.lower()
@@ -94,7 +95,7 @@ def export_device(nb, device):
     if device.rack:
         d["rack"] = device.rack.name
         if device.position:
-            d["rack_u"] = int(device.position)
+            d["rack_u"] = int(device.position) # type: ignore
     iface_name = mgmt_interface_name(nb, device)
     if iface_name and iface_name != "mgmt0":
         d["mgmt_interface"] = iface_name
@@ -103,7 +104,7 @@ def export_device(nb, device):
     return d
 
 
-def export_subnet(prefix):
+def export_subnet(prefix: Any) -> Any:
     s = {"prefix": str(prefix.prefix)}
     if prefix.vlan:
         s["vlan_id"] = prefix.vlan.vid
@@ -121,7 +122,7 @@ def export_subnet(prefix):
     return s
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output_file", help="Đường dẫn file YAML sẽ ghi ra")
     args = parser.parse_args()
