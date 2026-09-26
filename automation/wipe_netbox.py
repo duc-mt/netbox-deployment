@@ -22,6 +22,7 @@ Cách dùng:
 import argparse
 import os
 import sys
+from typing import Any, Dict, List, Optional
 
 try:
     import pynetbox
@@ -48,7 +49,7 @@ PLAN = [
 ]
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dry-run", action="store_true", help="Chỉ đếm, không xoá")
     parser.add_argument("--yes", action="store_true", help="Bỏ qua bước xác nhận")
