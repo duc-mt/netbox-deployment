@@ -95,7 +95,7 @@ def export_device(nb: Any, device: Any) -> Any:
     if device.rack:
         d["rack"] = device.rack.name
         if device.position:
-            d["rack_u"] = int(device.position) # type: ignore
+            d["rack_u"] = int(device.position)  # type: ignore
     iface_name = mgmt_interface_name(nb, device)
     if iface_name and iface_name != "mgmt0":
         d["mgmt_interface"] = iface_name

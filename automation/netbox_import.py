@@ -152,7 +152,7 @@ class Importer:
 
     def record(self, category: Any, obj: Any) -> Any:
         if obj is not None:
-            self.manifest[category].append({"id": obj.id, "name": str(obj)}) # type: ignore
+            self.manifest[category].append({"id": obj.id, "name": str(obj)})  # type: ignore
 
     def save_manifest(self, path: Any) -> Any:
         with open(path, "w", encoding="utf-8") as f:
@@ -350,11 +350,7 @@ class Importer:
         # Tự động gộp bất kỳ field nào trong YAML mà chưa có ô tương ứng
         # trên NetBox (KNOWN_FIELDS) — để không mất dữ liệu nếu file có
         # thêm cột mới sau này mà script chưa kịp cập nhật.
-        extra = [
-            f"{k}: {v}"
-            for k, v in d.items()
-            if k not in KNOWN_FIELDS and v not in (None, "")
-        ]
+        extra = [f"{k}: {v}" for k, v in d.items() if k not in KNOWN_FIELDS and v not in (None, "")]
         return "\n".join(extra)
 
     def import_device(self, d: Any) -> Any:
@@ -384,9 +380,7 @@ class Importer:
             manufacturer = self.get_manufacturer(vendor)
             role = self.get_role(kind)
             platform = self.get_platform(d.get("os"))
-            device_type = self.get_device_type(
-                vendor, d.get("model"), kind, manufacturer
-            )
+            device_type = self.get_device_type(vendor, d.get("model"), kind, manufacturer)
             rack = (
                 self.get_rack(d.get("rack"), site, location)
                 if kind not in RACK_ONLY_KINDS or d.get("rack")
@@ -573,9 +567,7 @@ class Importer:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("yaml_file", help="Đường dẫn tới file YAML (devices + subnets)")
-    parser.add_argument(
-        "--dry-run", action="store_true", help="Chỉ in ra, không ghi vào NetBox"
-    )
+    parser.add_argument("--dry-run", action="store_true", help="Chỉ in ra, không ghi vào NetBox")
     args = parser.parse_args()
 
     url = os.environ.get("NETBOX_URL")
@@ -587,9 +579,7 @@ def main() -> None:
         data = yaml.safe_load(f) or {}
     devices = data.get("devices", [])
     subnets = data.get("subnets", [])
-    print(
-        f"Đọc được {len(devices)} thiết bị và {len(subnets)} subnet từ {args.yaml_file}"
-    )
+    print(f"Đọc được {len(devices)} thiết bị và {len(subnets)} subnet từ {args.yaml_file}")
 
     nb = None
     if not args.dry_run:
@@ -614,9 +604,7 @@ def main() -> None:
 
     if not args.dry_run:
         ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-        manifests_dir = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), "manifests"
-        )
+        manifests_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manifests")
         os.makedirs(manifests_dir, exist_ok=True)
         manifest_path = os.path.join(manifests_dir, f"netbox_import_manifest_{ts}.json")
         importer.save_manifest(manifest_path)
