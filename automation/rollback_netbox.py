@@ -79,7 +79,7 @@ def main() -> None:
                 print(f"  [dry-run] sẽ xoá {label}")
                 continue
             try:
-                obj = endpoint.get(item["id"]) # type: ignore
+                obj = endpoint.get(item["id"])  # type: ignore
                 if obj is None:
                     print(f"  ~ Không tìm thấy (có thể đã bị xoá trước đó): {label}")
                     continue
