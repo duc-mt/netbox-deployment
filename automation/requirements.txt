@@ -1,0 +1,4 @@
+pynetbox>=7.0.0
+PyYAML>=6.0
+GitPython>=3.1.32
+python-dotenv>=1.0.0

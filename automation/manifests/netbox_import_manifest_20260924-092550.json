@@ -1,0 +1,2251 @@
+{
+  "created_at": "2026-09-24T09:21:40.928284+00:00",
+  "ip_addresses": [
+    {
+      "id": 1480,
+      "name": "10.119.9.202/32"
+    },
+    {
+      "id": 1481,
+      "name": "10.119.9.203/32"
+    },
+    {
+      "id": 1482,
+      "name": "10.119.9.201/32"
+    },
+    {
+      "id": 1483,
+      "name": "10.119.9.205/32"
+    },
+    {
+      "id": 1484,
+      "name": "10.119.9.206/32"
+    },
+    {
+      "id": 1485,
+      "name": "10.119.9.207/32"
+    },
+    {
+      "id": 1486,
+      "name": "10.119.9.208/32"
+    },
+    {
+      "id": 1487,
+      "name": "10.119.9.209/32"
+    },
+    {
+      "id": 1488,
+      "name": "10.119.9.210/32"
+    },
+    {
+      "id": 1489,
+      "name": "10.119.9.211/32"
+    },
+    {
+      "id": 1490,
+      "name": "10.119.9.212/32"
+    },
+    {
+      "id": 1491,
+      "name": "172.28.189.83/32"
+    },
+    {
+      "id": 1492,
+      "name": "172.28.189.75/32"
+    },
+    {
+      "id": 1493,
+      "name": "172.28.189.74/32"
+    },
+    {
+      "id": 1494,
+      "name": "172.28.189.73/32"
+    },
+    {
+      "id": 1495,
+      "name": "172.28.189.72/32"
+    },
+    {
+      "id": 1496,
+      "name": "172.28.189.71/32"
+    },
+    {
+      "id": 1497,
+      "name": "172.28.189.68/32"
+    },
+    {
+      "id": 1498,
+      "name": "172.28.189.67/32"
+    },
+    {
+      "id": 1499,
+      "name": "172.28.189.66/32"
+    },
+    {
+      "id": 1500,
+      "name": "172.28.189.65/32"
+    },
+    {
+      "id": 1501,
+      "name": "172.28.189.64/32"
+    },
+    {
+      "id": 1502,
+      "name": "172.28.189.63/32"
+    },
+    {
+      "id": 1503,
+      "name": "172.28.189.62/32"
+    },
+    {
+      "id": 1504,
+      "name": "172.28.189.61/32"
+    },
+    {
+      "id": 1505,
+      "name": "172.28.189.60/32"
+    },
+    {
+      "id": 1506,
+      "name": "172.28.189.59/32"
+    },
+    {
+      "id": 1507,
+      "name": "172.28.189.58/32"
+    },
+    {
+      "id": 1508,
+      "name": "172.28.189.57/32"
+    },
+    {
+      "id": 1509,
+      "name": "172.28.189.56/32"
+    },
+    {
+      "id": 1510,
+      "name": "172.28.189.55/32"
+    },
+    {
+      "id": 1511,
+      "name": "172.28.189.54/32"
+    },
+    {
+      "id": 1512,
+      "name": "172.28.189.53/32"
+    },
+    {
+      "id": 1513,
+      "name": "172.28.189.52/32"
+    },
+    {
+      "id": 1514,
+      "name": "172.28.189.51/32"
+    },
+    {
+      "id": 1515,
+      "name": "172.28.189.50/32"
+    },
+    {
+      "id": 1516,
+      "name": "172.28.189.49/32"
+    },
+    {
+      "id": 1517,
+      "name": "172.28.189.48/32"
+    },
+    {
+      "id": 1518,
+      "name": "172.28.188.68/32"
+    },
+    {
+      "id": 1519,
+      "name": "172.28.188.69/32"
+    },
+    {
+      "id": 1520,
+      "name": "172.28.188.75/32"
+    },
+    {
+      "id": 1521,
+      "name": "172.28.188.76/32"
+    },
+    {
+      "id": 1522,
+      "name": "172.28.188.78/32"
+    },
+    {
+      "id": 1523,
+      "name": "172.28.188.73/32"
+    },
+    {
+      "id": 1524,
+      "name": "172.28.188.74/32"
+    },
+    {
+      "id": 1525,
+      "name": "172.28.188.77/32"
+    },
+    {
+      "id": 1526,
+      "name": "172.28.188.132/32"
+    },
+    {
+      "id": 1527,
+      "name": "172.28.188.133/32"
+    },
+    {
+      "id": 1528,
+      "name": "172.28.188.134/32"
+    },
+    {
+      "id": 1529,
+      "name": "172.28.188.135/32"
+    },
+    {
+      "id": 1530,
+      "name": "172.28.188.136/32"
+    },
+    {
+      "id": 1531,
+      "name": "10.119.9.101/32"
+    },
+    {
+      "id": 1532,
+      "name": "10.119.9.104/32"
+    },
+    {
+      "id": 1533,
+      "name": "10.119.9.105/32"
+    },
+    {
+      "id": 1534,
+      "name": "10.119.9.106/32"
+    },
+    {
+      "id": 1535,
+      "name": "10.119.9.108/32"
+    },
+    {
+      "id": 1536,
+      "name": "10.119.9.251/32"
+    },
+    {
+      "id": 1537,
+      "name": "10.119.9.250/32"
+    },
+    {
+      "id": 1538,
+      "name": "172.28.189.91/32"
+    },
+    {
+      "id": 1539,
+      "name": "172.28.189.90/32"
+    },
+    {
+      "id": 1540,
+      "name": "172.28.189.89/32"
+    },
+    {
+      "id": 1541,
+      "name": "172.28.189.88/32"
+    },
+    {
+      "id": 1542,
+      "name": "172.28.189.87/32"
+    },
+    {
+      "id": 1543,
+      "name": "172.28.189.86/32"
+    },
+    {
+      "id": 1544,
+      "name": "172.28.189.85/32"
+    },
+    {
+      "id": 1545,
+      "name": "172.28.189.84/32"
+    },
+    {
+      "id": 1546,
+      "name": "172.28.189.82/32"
+    },
+    {
+      "id": 1547,
+      "name": "172.28.189.81/32"
+    },
+    {
+      "id": 1548,
+      "name": "172.28.189.80/32"
+    },
+    {
+      "id": 1549,
+      "name": "172.28.189.79/32"
+    },
+    {
+      "id": 1550,
+      "name": "172.28.189.78/32"
+    },
+    {
+      "id": 1551,
+      "name": "172.28.189.77/32"
+    },
+    {
+      "id": 1552,
+      "name": "172.28.189.76/32"
+    },
+    {
+      "id": 1553,
+      "name": "172.28.189.70/32"
+    },
+    {
+      "id": 1554,
+      "name": "172.28.189.69/32"
+    },
+    {
+      "id": 1555,
+      "name": "172.28.189.45/32"
+    },
+    {
+      "id": 1556,
+      "name": "172.28.189.44/32"
+    },
+    {
+      "id": 1557,
+      "name": "172.28.189.43/32"
+    },
+    {
+      "id": 1558,
+      "name": "172.28.189.42/32"
+    },
+    {
+      "id": 1559,
+      "name": "172.28.189.41/32"
+    },
+    {
+      "id": 1560,
+      "name": "172.28.189.40/32"
+    },
+    {
+      "id": 1561,
+      "name": "172.28.189.39/32"
+    },
+    {
+      "id": 1562,
+      "name": "172.28.189.38/32"
+    },
+    {
+      "id": 1563,
+      "name": "172.28.189.37/32"
+    },
+    {
+      "id": 1564,
+      "name": "172.28.189.36/32"
+    },
+    {
+      "id": 1565,
+      "name": "172.28.189.35/32"
+    },
+    {
+      "id": 1566,
+      "name": "172.28.189.34/32"
+    },
+    {
+      "id": 1567,
+      "name": "172.28.189.33/32"
+    },
+    {
+      "id": 1568,
+      "name": "172.28.189.32/32"
+    },
+    {
+      "id": 1569,
+      "name": "172.28.189.31/32"
+    },
+    {
+      "id": 1570,
+      "name": "172.28.189.30/32"
+    },
+    {
+      "id": 1571,
+      "name": "172.28.189.29/32"
+    },
+    {
+      "id": 1572,
+      "name": "172.28.189.28/32"
+    },
+    {
+      "id": 1573,
+      "name": "172.28.189.27/32"
+    },
+    {
+      "id": 1574,
+      "name": "172.28.189.26/32"
+    },
+    {
+      "id": 1575,
+      "name": "172.28.189.25/32"
+    },
+    {
+      "id": 1576,
+      "name": "172.28.189.24/32"
+    },
+    {
+      "id": 1577,
+      "name": "172.28.189.23/32"
+    },
+    {
+      "id": 1578,
+      "name": "172.28.189.22/32"
+    },
+    {
+      "id": 1579,
+      "name": "172.28.189.21/32"
+    },
+    {
+      "id": 1580,
+      "name": "172.28.189.20/32"
+    },
+    {
+      "id": 1581,
+      "name": "172.28.189.19/32"
+    },
+    {
+      "id": 1582,
+      "name": "172.28.189.18/32"
+    },
+    {
+      "id": 1583,
+      "name": "172.28.189.17/32"
+    },
+    {
+      "id": 1584,
+      "name": "172.28.189.16/32"
+    },
+    {
+      "id": 1585,
+      "name": "172.28.189.15/32"
+    },
+    {
+      "id": 1586,
+      "name": "172.28.189.14/32"
+    },
+    {
+      "id": 1587,
+      "name": "172.28.189.13/32"
+    },
+    {
+      "id": 1588,
+      "name": "172.28.189.12/32"
+    },
+    {
+      "id": 1589,
+      "name": "172.28.189.11/32"
+    },
+    {
+      "id": 1590,
+      "name": "172.28.189.10/32"
+    },
+    {
+      "id": 1591,
+      "name": "172.28.189.9/32"
+    },
+    {
+      "id": 1592,
+      "name": "172.28.189.8/32"
+    },
+    {
+      "id": 1593,
+      "name": "172.28.189.7/32"
+    },
+    {
+      "id": 1594,
+      "name": "172.28.189.6/32"
+    },
+    {
+      "id": 1595,
+      "name": "172.28.189.5/32"
+    },
+    {
+      "id": 1596,
+      "name": "172.28.189.4/32"
+    },
+    {
+      "id": 1597,
+      "name": "172.28.189.3/32"
+    },
+    {
+      "id": 1598,
+      "name": "172.28.189.2/32"
+    },
+    {
+      "id": 1599,
+      "name": "172.28.188.66/32"
+    },
+    {
+      "id": 1600,
+      "name": "172.28.188.71/32"
+    },
+    {
+      "id": 1601,
+      "name": "172.28.188.67/32"
+    },
+    {
+      "id": 1602,
+      "name": "172.28.188.70/32"
+    },
+    {
+      "id": 1603,
+      "name": "10.119.29.251/32"
+    },
+    {
+      "id": 1604,
+      "name": "172.28.189.1/32"
+    },
+    {
+      "id": 1605,
+      "name": "172.28.188.65/32"
+    },
+    {
+      "id": 1606,
+      "name": "10.119.29.253/32"
+    },
+    {
+      "id": 1607,
+      "name": "10.119.29.252/32"
+    },
+    {
+      "id": 1608,
+      "name": "10.119.9.253/32"
+    },
+    {
+      "id": 1609,
+      "name": "10.119.9.252/32"
+    },
+    {
+      "id": 1610,
+      "name": "172.28.188.80/32"
+    },
+    {
+      "id": 1611,
+      "name": "10.119.29.250/32"
+    },
+    {
+      "id": 1612,
+      "name": "172.28.188.137/32"
+    },
+    {
+      "id": 1613,
+      "name": "172.28.188.138/32"
+    },
+    {
+      "id": 1614,
+      "name": "172.28.188.129/32"
+    }
+  ],
+  "interfaces": [
+    {
+      "id": 1496,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1497,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1498,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1499,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1500,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1501,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1502,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1503,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1504,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1505,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1506,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1507,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1508,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1509,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1510,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1511,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1512,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1513,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1514,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1515,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1516,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1517,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1518,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1519,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1520,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1521,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1522,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1523,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1524,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1525,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1526,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1527,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1528,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1529,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1530,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1531,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1532,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1533,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1534,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1535,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1536,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1537,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1538,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1539,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1540,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1541,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1542,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1543,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1544,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1545,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1546,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1547,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1548,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1549,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1550,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1551,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1552,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1553,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1554,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1555,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1556,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1557,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1558,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1559,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1560,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1561,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1562,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1563,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1564,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1565,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1566,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1567,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1568,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1569,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1570,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1571,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1572,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1573,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1574,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1575,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1576,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1577,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1578,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1579,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1580,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1581,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1582,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1583,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1584,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1585,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1586,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1587,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1588,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1589,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1590,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1591,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1592,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1593,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1594,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1595,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1596,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1597,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1598,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1599,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1600,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1601,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1602,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1603,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1604,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1605,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1606,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1607,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1608,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1609,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1610,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1611,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1612,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1613,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1614,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1615,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1616,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1617,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1618,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1619,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1620,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1621,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1622,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1623,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1624,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1625,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1626,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1627,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1628,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1629,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1630,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1631,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1632,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1633,
+      "name": "mgmt0"
+    },
+    {
+      "id": 1634,
+      "name": "mgmt0"
+    }
+  ],
+  "devices": [
+    {
+      "id": 1658,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-02_9.202"
+    },
+    {
+      "id": 1659,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-03_9.203"
+    },
+    {
+      "id": 1660,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-04_9.201"
+    },
+    {
+      "id": 1661,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-05_9.205"
+    },
+    {
+      "id": 1662,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-06_9.206"
+    },
+    {
+      "id": 1663,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-07_9.207"
+    },
+    {
+      "id": 1664,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-08_9.208"
+    },
+    {
+      "id": 1665,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-09_9.209"
+    },
+    {
+      "id": 1666,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-10_9.210"
+    },
+    {
+      "id": 1667,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-11_9.211"
+    },
+    {
+      "id": 1668,
+      "name": "VPTTN_TTN_NET_Pro_8F-AP-12_9.212"
+    },
+    {
+      "id": 1669,
+      "name": "DCTTN_TTN_NET_Pro_5F-AP-04_189.83"
+    },
+    {
+      "id": 1670,
+      "name": "DCTTN_TTN_NET_Pro_4F-AP-04_189.75"
+    },
+    {
+      "id": 1671,
+      "name": "DCTTN_TTN_NET_Pro_5F-AP-03_189.74"
+    },
+    {
+      "id": 1672,
+      "name": "DCTTN_TTN_NET_Pro_4F-AP-02_189.73"
+    },
+    {
+      "id": 1673,
+      "name": "DCTTN_TTN_NET_Pro_4F-AP-03_189.72"
+    },
+    {
+      "id": 1674,
+      "name": "DCTTN_TTN_NET_Pro_4F-AP-01_189.71"
+    },
+    {
+      "id": 1675,
+      "name": "DCTTN_TTN_NET_Pro_5F-AP-02_189.68"
+    },
+    {
+      "id": 1676,
+      "name": "DCTTN_TTN_NET_Pro_3F-AP-04_189.67"
+    },
+    {
+      "id": 1677,
+      "name": "DCTTN_TTN_NET_Pro_3F-AP-03_189.66"
+    },
+    {
+      "id": 1678,
+      "name": "DCTTN_TTN_NET_Pro_3F-AP-02_189.65"
+    },
+    {
+      "id": 1679,
+      "name": "DCTTN_TTN_NET_Pro_3F-AP-01_189.64"
+    },
+    {
+      "id": 1680,
+      "name": "DCTTN_TTN_NET_Pro_1F-AP-06_189.63"
+    },
+    {
+      "id": 1681,
+      "name": "DCTTN_TTN_NET_Pro_1F-AP-05_189.62"
+    },
+    {
+      "id": 1682,
+      "name": "DCTTN_TTN_NET_Pro_1F-AP-04_189.61"
+    },
+    {
+      "id": 1683,
+      "name": "DCTTN_TTN_NET_Pro_1F-AP-03_189.60"
+    },
+    {
+      "id": 1684,
+      "name": "DCTTN_TTN_NET_Pro_1F-AP-02_189.59"
+    },
+    {
+      "id": 1685,
+      "name": "DCTTN_TTN_NET_Pro_1F-AP-01_189.58"
+    },
+    {
+      "id": 1686,
+      "name": "DCTTN_TTN_NET_Pro_BF-AP-01_189.57"
+    },
+    {
+      "id": 1687,
+      "name": "DCTTN_TTN_NET_Pro_2F-AP-05_189.56"
+    },
+    {
+      "id": 1688,
+      "name": "DCTTN_TTN_NET_Pro_5F-AP-01_189.55"
+    },
+    {
+      "id": 1689,
+      "name": "DCTTN_TTN_NET_Pro_2F-AP-04_189.54"
+    },
+    {
+      "id": 1690,
+      "name": "DCTTN_TTN_NET_Pro_2F-AP-02_189.53"
+    },
+    {
+      "id": 1691,
+      "name": "DCTTN_TTN_NET_Pro_2F-AP-01_189.52"
+    },
+    {
+      "id": 1692,
+      "name": "DCTTN_TTN_NET_Pro_2F-AP-10_189.51"
+    },
+    {
+      "id": 1693,
+      "name": "DCTTN_TTN_NET_Pro_2F-AP-08_189.50"
+    },
+    {
+      "id": 1694,
+      "name": "DCTTN_TTN_NET_Pro_2F-AP-09_189.49"
+    },
+    {
+      "id": 1695,
+      "name": "DCTTN_TTN_NET_Pro_2F-AP-07_189.48"
+    },
+    {
+      "id": 1696,
+      "name": "VPCMT8_CMT8_NET_Pro_6F-AP-01_188.68"
+    },
+    {
+      "id": 1697,
+      "name": "VPCMT8_CMT8_NET_Pro_6F-AP-02_188.69"
+    },
+    {
+      "id": 1698,
+      "name": "VPCMT8_CMT8_NET_Pro_3F-AP-01_188.75"
+    },
+    {
+      "id": 1699,
+      "name": "VPCMT8_CMT8_NET_Pro_3F-AP-02_188.76"
+    },
+    {
+      "id": 1700,
+      "name": "VPCMT8_CMT8_NET_Pro_3F-AP-03_188.78"
+    },
+    {
+      "id": 1701,
+      "name": "VPCMT8_CMT8_NET_Pro_2F-AP-01_188.73"
+    },
+    {
+      "id": 1702,
+      "name": "VPCMT8_CMT8_NET_Pro_2F-AP-02_188.74"
+    },
+    {
+      "id": 1703,
+      "name": "VPCMT8_CMT8_NET_Pro_2F-AP-03_188.77"
+    },
+    {
+      "id": 1704,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-AP-03_188.132"
+    },
+    {
+      "id": 1705,
+      "name": "VPSHTP_SHTP_NET_Pro_1F-AP-01_188.133"
+    },
+    {
+      "id": 1706,
+      "name": "VPSHTP_SHTP_NET_Pro_1F-AP-02_188.134"
+    },
+    {
+      "id": 1707,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-AP-01_188.135"
+    },
+    {
+      "id": 1708,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-AP-02_188.136"
+    },
+    {
+      "id": 1709,
+      "name": "VPTTN_TTN_NET_Pro_T8-ACCESS-04_9.101_U18"
+    },
+    {
+      "id": 1710,
+      "name": "VPTTN_TTN_NET_Pro_8F-ACCESS-03_9.104_U20"
+    },
+    {
+      "id": 1711,
+      "name": "VPTTN_TTN_NET_Pro_8F-ACCESS-05_9.105_U16"
+    },
+    {
+      "id": 1712,
+      "name": "VPTTN_TTN_NET_Pro_8F-ACCESS-02_9.106_U22"
+    },
+    {
+      "id": 1713,
+      "name": "VPTTN_TTN_NET_Pro_8F-ACCESS-01_9.108_U24"
+    },
+    {
+      "id": 1714,
+      "name": "VPTTN_TTN_NET_Pro_8F-CORE-01_9.251_U31"
+    },
+    {
+      "id": 1715,
+      "name": "VPTTN_TTN_NET_Pro_8F-CORE-02_9.250_U29"
+    },
+    {
+      "id": 1716,
+      "name": "DCTTN_TTN_NET_Pro_5F-SW.02-ACS_189.91_U42"
+    },
+    {
+      "id": 1717,
+      "name": "DCTTN_TTN_NET_Pro_5F-SW.01-BAS_189.90_U38"
+    },
+    {
+      "id": 1718,
+      "name": "DCTTN_TTN_NET_Pro_5F-SW.03-CAM_189.89_U44"
+    },
+    {
+      "id": 1719,
+      "name": "DCTTN_TTN_NET_Pro_5F-SW.02-CAM_189.88_U44"
+    },
+    {
+      "id": 1720,
+      "name": "DCTTN_TTN_NET_Pro_5F-SW.01-CAM_189.87_U46"
+    },
+    {
+      "id": 1721,
+      "name": "DCTTN_TTN_NET_Pro_5F-SW.03-BAS_189.86_U36"
+    },
+    {
+      "id": 1722,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.02-SEC_189.85_U22"
+    },
+    {
+      "id": 1723,
+      "name": "DCTTN_TTN_NET_Pro_5F-SW.02-BAS_189.84_U40"
+    },
+    {
+      "id": 1724,
+      "name": "DCTTN_TTN_NET_Pro_F5-SW-NW_189.82_U46"
+    },
+    {
+      "id": 1725,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.08-SEC_189.81_U43"
+    },
+    {
+      "id": 1726,
+      "name": "DCTTN_TTN_NET_Pro_F4-SW-NW_189.80_U46"
+    },
+    {
+      "id": 1727,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.01-BAS_189.79_U40"
+    },
+    {
+      "id": 1728,
+      "name": "DCTTN_TTN_NET_Pro_BF-SW.01-BAS_189.78_U44"
+    },
+    {
+      "id": 1729,
+      "name": "DCTTN_TTN_NET_Pro_4F-SW.01-CAM_189.77_U44"
+    },
+    {
+      "id": 1730,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.02-CORE-01_189.76_U35"
+    },
+    {
+      "id": 1731,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.02-CORE-02_189.76_U34"
+    },
+    {
+      "id": 1732,
+      "name": "DCTTN_TTN_NET_Pro_4F-SW.01-ACS_189.70_U38"
+    },
+    {
+      "id": 1733,
+      "name": "DCTTN_TTN_NET_Pro_4F-SW.02-BAS_189.69_U40"
+    },
+    {
+      "id": 1734,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.01-BAS_189.45_U32"
+    },
+    {
+      "id": 1735,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.10-SEC_189.44_U36"
+    },
+    {
+      "id": 1736,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.09-SEC_189.43_U37"
+    },
+    {
+      "id": 1737,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.08-SEC_189.42_U38"
+    },
+    {
+      "id": 1738,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.07-SEC_189.41_U39"
+    },
+    {
+      "id": 1739,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.06-SEC_189.40_U40"
+    },
+    {
+      "id": 1740,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.05-SEC_189.39_U41"
+    },
+    {
+      "id": 1741,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.04-SEC_189.38_U42"
+    },
+    {
+      "id": 1742,
+      "name": "DCTTN_TTN_NET_Pro_4F-6F-SW.03-SEC_189.37_U36"
+    },
+    {
+      "id": 1743,
+      "name": "DCTTN_TTN_NET_Pro_6F-SW.02-SEC_189.36_U37"
+    },
+    {
+      "id": 1744,
+      "name": "DCTTN_TTN_NET_Pro_4F-RF-SW.01-SEC_189.35_U38"
+    },
+    {
+      "id": 1745,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.07-SEC_189.34_U29"
+    },
+    {
+      "id": 1746,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.06-SEC_189.33_U46"
+    },
+    {
+      "id": 1747,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.05-SEC_189.32_U19"
+    },
+    {
+      "id": 1748,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.04-SEC_189.31_U20"
+    },
+    {
+      "id": 1749,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.03-SEC_189.30_U21"
+    },
+    {
+      "id": 1750,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.01-SEC_189.29_U23"
+    },
+    {
+      "id": 1751,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.09-SEC_189.28_U31"
+    },
+    {
+      "id": 1752,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.08-SEC_189.27_U32"
+    },
+    {
+      "id": 1753,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.07-SEC_189.26_U33"
+    },
+    {
+      "id": 1754,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.06-SEC_189.25_U34"
+    },
+    {
+      "id": 1755,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.05-SEC_189.24_U35"
+    },
+    {
+      "id": 1756,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.04-SEC_189.23_U36"
+    },
+    {
+      "id": 1757,
+      "name": "DCTTN_TTN_NET_Pro_BF-SW.02-SEC_189.22_U37"
+    },
+    {
+      "id": 1758,
+      "name": "DCTTN_TTN_NET_Pro_BF-SW.01-SEC_189.21_U38"
+    },
+    {
+      "id": 1759,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.03-SEC_189.20_U17"
+    },
+    {
+      "id": 1760,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.02-SEC_189.19_U18"
+    },
+    {
+      "id": 1761,
+      "name": "DCTTN_TTN_NET_Pro_1F-SW.01-SEC_189.18_U19"
+    },
+    {
+      "id": 1762,
+      "name": "DCTTN_TTN_NET_Pro_3F-6F-SW.01-NW_189.17_U40"
+    },
+    {
+      "id": 1763,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.05-NW_189.16_U25"
+    },
+    {
+      "id": 1764,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.04-NW_189.15_U26"
+    },
+    {
+      "id": 1765,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.03-NW_189.14_U27"
+    },
+    {
+      "id": 1766,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.02-NW_189.13_U28"
+    },
+    {
+      "id": 1767,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.01-NW_189.12_U29"
+    },
+    {
+      "id": 1768,
+      "name": "DCTTN_TTN_NET_Pro_BF-1F-SW.01-NW_189.11_U21"
+    },
+    {
+      "id": 1769,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.02-BAS_189.10_U43"
+    },
+    {
+      "id": 1770,
+      "name": "DCTTN_TTN_NET_Pro_3F-SW.01-BAS_189.9_U44"
+    },
+    {
+      "id": 1771,
+      "name": "DCTTN_TTN_NET_Pro_4F-SW.01-BAS_189.8_U36"
+    },
+    {
+      "id": 1772,
+      "name": "DCTTN_TTN_NET_Pro_RT-SW.01-BAS_189.7_U42"
+    },
+    {
+      "id": 1773,
+      "name": "DCTTN_TTN_NET_Pro_6F-SW.01-BAS_189.6_U43"
+    },
+    {
+      "id": 1774,
+      "name": "DCTTN_TTN_NET_Pro_5F-SW.01-ACS_189.5_U38"
+    },
+    {
+      "id": 1775,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.03-BAS_189.4_U47"
+    },
+    {
+      "id": 1776,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.02-BAS_189.3_U31"
+    },
+    {
+      "id": 1777,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.01-CORE-01_189.2_U35"
+    },
+    {
+      "id": 1778,
+      "name": "DCTTN_TTN_NET_Pro_2F-SW.01-CORE-02_189.2_U34"
+    },
+    {
+      "id": 1779,
+      "name": "VPCMT8_CMT8_NET_Pro_6F-CORE_188.66_U37"
+    },
+    {
+      "id": 1780,
+      "name": "VPCMT8_CMT8_NET_Pro_6F-ACCESS_188.71"
+    },
+    {
+      "id": 1781,
+      "name": "VPCMT8_CMT8_NET_Pro_3F-ACCESS_188.67"
+    },
+    {
+      "id": 1782,
+      "name": "VPCMT8_CMT8_NET_Pro_2F-ACCESS_188.70"
+    },
+    {
+      "id": 1783,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-CORE-01_29.251_U41"
+    },
+    {
+      "id": 1784,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-CORE-02_29.251_U39"
+    },
+    {
+      "id": 1785,
+      "name": "DCTTN_TTN_NET_Pro_2F-FW-01_189.1_U33"
+    },
+    {
+      "id": 1786,
+      "name": "VPCMT8_CMT8_NET_Pro_6F-FW-01_188.65_U35"
+    },
+    {
+      "id": 1787,
+      "name": "VPCMT8_CMT8_NET_Pro_6F-FW-02_188.65_U33"
+    },
+    {
+      "id": 1788,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-FW-01_29.253_U25"
+    },
+    {
+      "id": 1789,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-FW-02_29.252_U24"
+    },
+    {
+      "id": 1790,
+      "name": "VPTTN_TTN_NET_Pro_8F-FW-01_9.253_U34"
+    },
+    {
+      "id": 1791,
+      "name": "VPTTN_TTN_NET_Pro_8F-FW-02_9.252_U33"
+    },
+    {
+      "id": 1792,
+      "name": "VPCMT8_CMT8_NET_Pro_6F-UPLINK_188.80_U39"
+    },
+    {
+      "id": 1793,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-ACCESS_29.250"
+    },
+    {
+      "id": 1794,
+      "name": "VPSHTP_SHTP_NET_Pro_1F-AP-03_188.137"
+    },
+    {
+      "id": 1795,
+      "name": "VPSHTP_SHTP_NET_Pro_2F-AP-04_188.138"
+    },
+    {
+      "id": 1796,
+      "name": "DCSHTP_SHTP_NET_Pro_2F-FW-01_188.129_U31"
+    },
+    {
+      "id": 1797,
+      "name": "DCSHTP_SHTP_NET_Pro_2F-SF350-B6.4"
+    },
+    {
+      "id": 1798,
+      "name": "DCSHTP_SHTP_NET_Pro_1F-SF350-MMR2.2"
+    },
+    {
+      "id": 1799,
+      "name": "DCSHTP_SHTP_NET_Pro_2F-LINKSYS-B6.14"
+    },
+    {
+      "id": 1800,
+      "name": "DCSHTP_SHTP_NET_Pro_2F-RVIGOR3900-B6.20"
+    },
+    {
+      "id": 1801,
+      "name": "DCSHTP_SHTP_NET_Pro_2F-TLSG1048-B6.24"
+    },
+    {
+      "id": 1802,
+      "name": "DCSHTP_SHTP_NET_Pro_2F-HIKVISION-B6.13"
+    },
+    {
+      "id": 1803,
+      "name": "DCSHTP_SHTP_NET_Pro_2F-ZYXEL-B6.2"
+    },
+    {
+      "id": 1804,
+      "name": "DCSHTP_SHTP_NET_Pro_2F-ACCESS-DCROOM"
+    },
+    {
+      "id": 1805,
+      "name": "DCSHTP_SHTP_NET_Pro_1F-SF300-PDUROOM"
+    },
+    {
+      "id": 1806,
+      "name": "DCSHTP_SHTP_NET_Pro_1F-SW110-CAMERA-MMR2"
+    },
+    {
+      "id": 1807,
+      "name": "DCSHTP_SHTP_NET_Pro_1F-SW-FNSW-MMR2"
+    },
+    {
+      "id": 1808,
+      "name": "DCSHTP_SHTP_NET_Pro_1F-TLSG1024D-MMR2"
+    },
+    {
+      "id": 1809,
+      "name": "DCSHTP_SHTP_NET_Pro_1F-TLSG1024D-MMR3.2.4"
+    },
+    {
+      "id": 1810,
+      "name": "DCSHTP_SHTP_NET_Pro_1F-TLSG1016D-LETAN"
+    },
+    {
+      "id": 1811,
+      "name": "DCSHTP_SHTP_NET_Pro_1F-APTEK-MMR3.2.2"
+    },
+    {
+      "id": 1812,
+      "name": "DCTTN_TTN_NET_Pro_4F-SW.02-CAM_U42"
+    },
+    {
+      "id": 1813,
+      "name": "DCTTN_TTN_NET_Pro_2F-FW-02_189.1_U43"
+    }
+  ],
+  "device_types": [
+    {
+      "id": 455,
+      "name": "UAP-AC-HD"
+    },
+    {
+      "id": 456,
+      "name": "UAP-AC-PRO"
+    },
+    {
+      "id": 457,
+      "name": "UAP-PRO"
+    },
+    {
+      "id": 458,
+      "name": "UAP-AC-LR"
+    },
+    {
+      "id": 459,
+      "name": "UAP-HD"
+    },
+    {
+      "id": 460,
+      "name": "UAP-AC-PRO-Gen2"
+    },
+    {
+      "id": 461,
+      "name": "SF350-48P"
+    },
+    {
+      "id": 462,
+      "name": "SF300-48PP"
+    },
+    {
+      "id": 463,
+      "name": "EX4300-24T"
+    },
+    {
+      "id": 464,
+      "name": "C9200-24T"
+    },
+    {
+      "id": 465,
+      "name": "CS83-24GT4XS-PD"
+    },
+    {
+      "id": 466,
+      "name": "C9200-24P"
+    },
+    {
+      "id": 467,
+      "name": "C9200L-24T-4G"
+    },
+    {
+      "id": 468,
+      "name": "C1300-48T-4G"
+    },
+    {
+      "id": 469,
+      "name": "C1000-24FP-4G-L"
+    },
+    {
+      "id": 470,
+      "name": "CBS350-48T-4G"
+    },
+    {
+      "id": 471,
+      "name": "C1000-24T-4G-L"
+    },
+    {
+      "id": 472,
+      "name": "C9200L-48P-4G"
+    },
+    {
+      "id": 473,
+      "name": "S5735-L24T4S-A1"
+    },
+    {
+      "id": 474,
+      "name": "C1000-48T-4G-L"
+    },
+    {
+      "id": 475,
+      "name": "2530-24G"
+    },
+    {
+      "id": 476,
+      "name": "C9300-24P"
+    },
+    {
+      "id": 477,
+      "name": "SG350-28P"
+    },
+    {
+      "id": 478,
+      "name": "SF300-48P"
+    },
+    {
+      "id": 479,
+      "name": "WS-C2960X-48TS-L"
+    },
+    {
+      "id": 480,
+      "name": "WS-C2960X-24TS-L"
+    },
+    {
+      "id": 481,
+      "name": "EX4300-48T"
+    },
+    {
+      "id": 482,
+      "name": "FortiGate-200E"
+    },
+    {
+      "id": 483,
+      "name": "FortiGate-100E"
+    },
+    {
+      "id": 484,
+      "name": "CP1800"
+    },
+    {
+      "id": 485,
+      "name": "EX3200-24T"
+    },
+    {
+      "id": 486,
+      "name": "SRW224G4P"
+    },
+    {
+      "id": 487,
+      "name": "Vigor3900"
+    },
+    {
+      "id": 488,
+      "name": "TL-SG1048"
+    },
+    {
+      "id": 489,
+      "name": "DS3E0526PE/M"
+    },
+    {
+      "id": 490,
+      "name": "GS1920"
+    },
+    {
+      "id": 491,
+      "name": "2916 SFP Plus"
+    },
+    {
+      "id": 492,
+      "name": "110 Series"
+    },
+    {
+      "id": 493,
+      "name": "FNSW-2401"
+    },
+    {
+      "id": 494,
+      "name": "TL-SG1024D"
+    },
+    {
+      "id": 495,
+      "name": "TL-SG1016D"
+    },
+    {
+      "id": 496,
+      "name": "SG220-48P"
+    }
+  ],
+  "racks": [
+    {
+      "id": 184,
+      "name": "SVR 8F"
+    },
+    {
+      "id": 185,
+      "name": "5F.NW6.R1"
+    },
+    {
+      "id": 186,
+      "name": "5F.NW5.R1"
+    },
+    {
+      "id": 187,
+      "name": "2F.NOC.R1"
+    },
+    {
+      "id": 188,
+      "name": "2F.NOC.R3"
+    },
+    {
+      "id": 189,
+      "name": "4F.NW4.R1"
+    },
+    {
+      "id": 190,
+      "name": "1F.TELCO2.R4"
+    },
+    {
+      "id": 191,
+      "name": "3F.NW2.R2"
+    },
+    {
+      "id": 192,
+      "name": "3F.NW1.R1"
+    },
+    {
+      "id": 193,
+      "name": "2F.NOC.R2"
+    },
+    {
+      "id": 194,
+      "name": "1F.TELCO1.R2"
+    },
+    {
+      "id": 195,
+      "name": "CO1 B7"
+    },
+    {
+      "id": 196,
+      "name": "SVR1 O8"
+    },
+    {
+      "id": 197,
+      "name": "SVR1"
+    },
+    {
+      "id": 198,
+      "name": "SVR1 B6"
+    },
+    {
+      "id": 199,
+      "name": "MMR2"
+    },
+    {
+      "id": 200,
+      "name": "MMR3.2"
+    }
+  ],
+  "locations": [
+    {
+      "id": 109,
+      "name": "8F"
+    },
+    {
+      "id": 110,
+      "name": "5F"
+    },
+    {
+      "id": 111,
+      "name": "4F"
+    },
+    {
+      "id": 112,
+      "name": "3F"
+    },
+    {
+      "id": 113,
+      "name": "2F"
+    },
+    {
+      "id": 114,
+      "name": "1F"
+    },
+    {
+      "id": 115,
+      "name": "BF"
+    },
+    {
+      "id": 116,
+      "name": "6F"
+    },
+    {
+      "id": 117,
+      "name": "3F"
+    },
+    {
+      "id": 118,
+      "name": "2F"
+    },
+    {
+      "id": 119,
+      "name": "2F"
+    },
+    {
+      "id": 120,
+      "name": "1F"
+    }
+  ],
+  "platforms": [
+    {
+      "id": 137,
+      "name": "ios"
+    },
+    {
+      "id": 138,
+      "name": "junos"
+    },
+    {
+      "id": 139,
+      "name": "ios-xe"
+    },
+    {
+      "id": 140,
+      "name": "rgos"
+    },
+    {
+      "id": 141,
+      "name": "vrp"
+    },
+    {
+      "id": 142,
+      "name": "aos-s"
+    },
+    {
+      "id": 143,
+      "name": "fortios"
+    },
+    {
+      "id": 144,
+      "name": "gaia-embedded"
+    }
+  ],
+  "device_roles": [
+    {
+      "id": 64,
+      "name": "Access Point"
+    },
+    {
+      "id": 65,
+      "name": "Switch"
+    },
+    {
+      "id": 66,
+      "name": "Firewall"
+    },
+    {
+      "id": 67,
+      "name": "Hub"
+    },
+    {
+      "id": 68,
+      "name": "Router"
+    }
+  ],
+  "manufacturers": [
+    {
+      "id": 209,
+      "name": "Unifi"
+    },
+    {
+      "id": 210,
+      "name": "Cisco"
+    },
+    {
+      "id": 211,
+      "name": "Juniper"
+    },
+    {
+      "id": 212,
+      "name": "Ruijie"
+    },
+    {
+      "id": 213,
+      "name": "Huawei"
+    },
+    {
+      "id": 214,
+      "name": "Aruba"
+    },
+    {
+      "id": 215,
+      "name": "Fortinet"
+    },
+    {
+      "id": 216,
+      "name": "Checkpoint"
+    },
+    {
+      "id": 217,
+      "name": "Linksys"
+    },
+    {
+      "id": 218,
+      "name": "Draytek"
+    },
+    {
+      "id": 219,
+      "name": "Tplink"
+    },
+    {
+      "id": 220,
+      "name": "Hikvision"
+    },
+    {
+      "id": 221,
+      "name": "Zyxel"
+    },
+    {
+      "id": 222,
+      "name": "3Com"
+    },
+    {
+      "id": 223,
+      "name": "Planet"
+    },
+    {
+      "id": 224,
+      "name": "Aptek"
+    }
+  ],
+  "sites": [
+    {
+      "id": 70,
+      "name": "VPTT"
+    },
+    {
+      "id": 71,
+      "name": "DCTT"
+    },
+    {
+      "id": 72,
+      "name": "CMT8"
+    },
+    {
+      "id": 73,
+      "name": "SHTP"
+    }
+  ],
+  "prefixes": [
+    {
+      "id": 9,
+      "name": "172.28.188.128/26"
+    },
+    {
+      "id": 10,
+      "name": "172.28.189.0/24"
+    },
+    {
+      "id": 11,
+      "name": "172.28.188.64/26"
+    },
+    {
+      "id": 12,
+      "name": "10.119.29.0/24"
+    },
+    {
+      "id": 13,
+      "name": "10.119.9.0/24"
+    },
+    {
+      "id": 14,
+      "name": "42.96.57.88/29"
+    },
+    {
+      "id": 15,
+      "name": "42.96.57.96/29"
+    },
+    {
+      "id": 16,
+      "name": "42.96.57.72/29"
+    },
+    {
+      "id": 17,
+      "name": "42.96.57.80/29"
+    },
+    {
+      "id": 18,
+      "name": "172.23.102.240/29"
+    },
+    {
+      "id": 19,
+      "name": "172.23.102.248/29"
+    }
+  ],
+  "vlans": [
+    {
+      "id": 9,
+      "name": "MGMT-DCSHTP"
+    },
+    {
+      "id": 10,
+      "name": "MGMT-DCTT"
+    },
+    {
+      "id": 11,
+      "name": "MGMT-CMT8"
+    },
+    {
+      "id": 12,
+      "name": "MGMT-VPSHTP"
+    },
+    {
+      "id": 13,
+      "name": "MGMT-VPTT"
+    },
+    {
+      "id": 14,
+      "name": "ILL-VPTT-01"
+    },
+    {
+      "id": 15,
+      "name": "ILL-VPTT-02"
+    },
+    {
+      "id": 16,
+      "name": "ILL-VPSHTP-01"
+    },
+    {
+      "id": 17,
+      "name": "ILL-VPSHTP-02"
+    },
+    {
+      "id": 18,
+      "name": "ZONING-VPTT"
+    },
+    {
+      "id": 19,
+      "name": "ZONING-VPSHTP"
+    }
+  ]
+}
