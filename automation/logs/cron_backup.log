@@ -1,0 +1,23 @@
+Đang tải danh sách Device từ NetBox...
+Traceback (most recent call last):
+  File "/home/duc.mt/import_netbox/import_automation/export_netbox.py", line 152, in <module>
+    main()
+  File "/home/duc.mt/import_netbox/import_automation/export_netbox.py", line 137, in main
+    devices = [export_device(nb, dev) for dev in nb.dcim.devices.all()]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duc.mt/import_netbox/env/lib/python3.12/site-packages/pynetbox/core/response.py", line 134, in __next__
+    next(self.response), self.endpoint.api, self.endpoint
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/duc.mt/import_netbox/env/lib/python3.12/site-packages/pynetbox/core/query.py", line 505, in get
+    req = self._make_call(add_params=add_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duc.mt/import_netbox/env/lib/python3.12/site-packages/pynetbox/core/query.py", line 431, in _make_call
+    raise RequestError(req)
+pynetbox.core.query.RequestError: The request failed with code 503 Service Unavailable but more specific details were not returned in json. Check the NetBox Logs or investigate this exception's error attribute.
+Đang tải danh sách Device từ NetBox...
+  -> 156 device
+Đang tải danh sách Prefix từ NetBox...
+  -> 11 prefix
+
+Đã ghi ra: inventory_backup_20260924.yaml
+Thiếu NETBOX_URL / NETBOX_TOKEN trong biến môi trường.
