@@ -11,6 +11,7 @@ Usage:         python3 test_config.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
 """
+
 LOGGING = {"version": 1, "disable_existing_loggers": True}
 
 PLUGINS = [

@@ -11,6 +11,7 @@ Usage:         python3 granian.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
 """
+
 from granian.utils.proxies import wrap_wsgi_with_proxy_headers
 from netbox.wsgi import application
 

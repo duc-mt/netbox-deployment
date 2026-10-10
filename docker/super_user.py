@@ -11,6 +11,7 @@ Usage:         python3 super_user.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
 """
+
 import sys
 from os import environ
 

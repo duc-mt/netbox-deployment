@@ -12,6 +12,7 @@ Usage:         python3 rollback_netbox.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
 """
+
 """
 Rollback lần chạy netbox_import.py gần nhất bằng file manifest nó tạo ra.
 

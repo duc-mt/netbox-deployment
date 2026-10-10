@@ -11,6 +11,7 @@ Usage:         python3 ldap_config.docker.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
 """
+
 from .configuration import read_configurations
 
 _loaded_configurations = read_configurations(
