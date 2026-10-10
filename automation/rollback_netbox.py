@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
 """
 ==============================================================================
 Module Name:   rollback_netbox.py
-Description:   Rollback lần chạy netbox_import.py gần nhất bằng file manifest nó tạo ra.  CHỈ xoá đúng những object mà lần chạy đó đã TẠO MỚI (không đụng tới object có sẵn từ trước trong NetBox, kể cả khi trùng tên/trùng dải IP).  Cách dùng:     export NETBOX_URL="https://netbox.example.com"     export NETBOX_TOKEN="..."     python3 rollback_netbox.py netbox_import_manifest_20260101-120000.json      Thêm --dry-run để xem trước sẽ xoá gì mà chưa xoá thật.  Thứ tự xoá đi từ "lá" (phụ thuộc nhiều nhất) tới "gốc", để không bị NetBox chặn vì ràng buộc khoá ngoại (vd không xoá được Site khi vẫn còn Rack, Location, Prefix hay VLAN đang tham chiếu tới nó):     ip_addresses -> interfaces -> devices -> device_types -> racks     -> locations -> prefixes -> vlans -> platforms -> device_roles     -> manufacturers -> sites
+Description:   Source module rollback_netbox.py.
 Author:        Mai Tan Duc <ducmai.network@gmail.com>
 Created:       2026-10-10
 Version:       1.0.0
@@ -13,6 +12,7 @@ Notes:         Requires Python 3.8+
 ==============================================================================
 """
 
+#!/usr/bin/env python3
 import argparse
 import json
 import os

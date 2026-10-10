@@ -1,7 +1,7 @@
 """
 ==============================================================================
 Module Name:   ldap_config.docker.py
-Description:   Implementation and logic for ldap_config.docker.
+Description:   Source module ldap_config.docker.py.
 Author:        Mai Tan Duc <ducmai.network@gmail.com>
 Created:       2026-10-10
 Version:       1.0.0

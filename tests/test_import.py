@@ -1,7 +1,7 @@
 """
 ==============================================================================
 Module Name:   test_import.py
-Description:   Implementation and logic for test_import.
+Description:   Source module test_import.py.
 Author:        Mai Tan Duc <ducmai.network@gmail.com>
 Created:       2026-10-10
 Version:       1.0.0

@@ -1,7 +1,7 @@
 """
 ==============================================================================
 Module Name:   configuration.py
-Description:   Implementation and logic for configuration.
+Description:   Source module configuration.py.
 Author:        Mai Tan Duc <ducmai.network@gmail.com>
 Created:       2026-10-10
 Version:       1.0.0
@@ -11,11 +11,6 @@ Usage:         python3 configuration.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
 """
-####
-## We recommend to not edit this file.
-## Create separate files to overwrite the settings.
-## See `extra.py` as an example.
-####
 
 import re
 from collections.abc import Callable

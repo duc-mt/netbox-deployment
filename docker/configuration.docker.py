@@ -1,7 +1,7 @@
 """
 ==============================================================================
 Module Name:   configuration.docker.py
-Description:   Implementation and logic for configuration.docker.
+Description:   Source module configuration.docker.py.
 Author:        Mai Tan Duc <ducmai.network@gmail.com>
 Created:       2026-10-10
 Version:       1.0.0
@@ -11,11 +11,6 @@ Usage:         python3 configuration.docker.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
 """
-## Generic Parts
-# These functions are providing the functionality to load
-# arbitrary configuration files.
-#
-# They can be imported by other code (see `ldap_config.py` for an example).
 
 import importlib.util
 import sys
