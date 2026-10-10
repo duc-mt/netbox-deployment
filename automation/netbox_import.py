@@ -2,7 +2,7 @@
 """
 ==============================================================================
 Module Name:   netbox_import.py
-Description:   Implementation and logic for netbox_import.
+Description:   Import devices + subnet/VLAN (định dạng CMC_NMS_Tool) vào NetBox — MỘT file YAML, MỘT script import, MỘT script rollback (gộp import_to_netbox.py + import_subnets.py trước đây).  Cách dùng:     pip install pynetbox pyyaml     export NETBOX_URL="https://netbox.example.com"     export NETBOX_TOKEN="0123456789abcdef0123456789abcdef01234567"     python3 netbox_import.py inventory.yaml      Thêm --dry-run để xem trước sẽ tạo những gì mà KHÔNG ghi vào NetBox.  File YAML có 2 phần, đều tuỳ chọn (thiếu phần nào thì bỏ qua phần đó):     devices:       - name: ...         kind: ...         ...                 # như devices_1.yaml trước đây     subnets:       - prefix: 172.28.188.128/26         vlan_id: 117         vlan_name: VLAN117         site: DCTT          # site nên đã có (script tạo Site ở phần devices                              # trước, rồi mới xử lý phần subnets)  Script tự tạo (nếu chưa có, dùng get_or_create — chạy lại nhiều lần an toàn):     - Site            (từ field `site`)     - Location        (từ field `location`, thuộc Site tương ứng)     - Manufacturer    (từ field `vendor`)     - Device Role     (từ field `kind`: ap -> "Access Point", switch ->                         "Switch", firewall -> "Firewall", còn lại dùng                         chính tên `kind` viết hoa chữ đầu)     - Platform        (từ field `os`, nếu có)     - Device Type     (từ field `model`; nếu model rỗng thì dùng                         "Generic-<vendor>-<kind>" làm placeholder, u_height=1)     - Rack            (từ field `rack`, thuộc site tương ứng, 48U mặc định                         như comment trong YAML, NetBox mặc định đếm U từ                         dưới lên nên khớp với rack_u trong file)     - Device          (name, site, location, role, device_type, platform,                         rack+position, serial, description, status, và các                         custom field netops_credential_key / netops_layer /                         netops_os_version nếu có)     - Interface + IP  (interface lấy tên theo `mgmt_interface`, mặc định là                         "mgmt0"; gán IP field `ip` /32 vào interface đó rồi                         set làm primary IPv4 của device — mỗi device có                         object IP riêng dù trùng địa chỉ với device khác,                         vd cặp switch/firewall HA dùng chung IP quản lý)     - VLAN            (từ `vlan_id` + `vlan_name`, thuộc site nếu có)     - Prefix          (từ `prefix`, gán site + vlan tương ứng)  Field nào chưa có ô tương ứng trong NetBox (nếu YAML có thêm field lạ sau này) sẽ tự động được gộp vào phần Comments của device để không mất dữ liệu.  Sau khi chạy xong (không phải --dry-run), script ghi ra một file netbox_import_manifest_<thời-gian>.json liệt kê đúng những object vừa TẠO MỚI (không ghi object có sẵn hay chỉ bị update) — dùng file này với rollback_netbox.py để undo nếu cần.
 Author:        Mai Tan Duc <ducmai.network@gmail.com>
 Created:       2026-10-10
 Version:       1.0.0
@@ -11,65 +11,6 @@ License:       MIT
 Usage:         python3 netbox_import.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
-"""
-
-"""
-Import devices + subnet/VLAN (định dạng CMC_NMS_Tool) vào NetBox — MỘT file
-YAML, MỘT script import, MỘT script rollback (gộp import_to_netbox.py +
-import_subnets.py trước đây).
-
-Cách dùng:
-    pip install pynetbox pyyaml
-    export NETBOX_URL="https://netbox.example.com"
-    export NETBOX_TOKEN="0123456789abcdef0123456789abcdef01234567"
-    python3 netbox_import.py inventory.yaml
-
-    Thêm --dry-run để xem trước sẽ tạo những gì mà KHÔNG ghi vào NetBox.
-
-File YAML có 2 phần, đều tuỳ chọn (thiếu phần nào thì bỏ qua phần đó):
-    devices:
-      - name: ...
-        kind: ...
-        ...                 # như devices_1.yaml trước đây
-    subnets:
-      - prefix: 172.28.188.128/26
-        vlan_id: 117
-        vlan_name: VLAN117
-        site: DCTT          # site nên đã có (script tạo Site ở phần devices
-                             # trước, rồi mới xử lý phần subnets)
-
-Script tự tạo (nếu chưa có, dùng get_or_create — chạy lại nhiều lần an toàn):
-    - Site            (từ field `site`)
-    - Location        (từ field `location`, thuộc Site tương ứng)
-    - Manufacturer    (từ field `vendor`)
-    - Device Role     (từ field `kind`: ap -> "Access Point", switch ->
-                        "Switch", firewall -> "Firewall", còn lại dùng
-                        chính tên `kind` viết hoa chữ đầu)
-    - Platform        (từ field `os`, nếu có)
-    - Device Type     (từ field `model`; nếu model rỗng thì dùng
-                        "Generic-<vendor>-<kind>" làm placeholder, u_height=1)
-    - Rack            (từ field `rack`, thuộc site tương ứng, 48U mặc định
-                        như comment trong YAML, NetBox mặc định đếm U từ
-                        dưới lên nên khớp với rack_u trong file)
-    - Device          (name, site, location, role, device_type, platform,
-                        rack+position, serial, description, status, và các
-                        custom field netops_credential_key / netops_layer /
-                        netops_os_version nếu có)
-    - Interface + IP  (interface lấy tên theo `mgmt_interface`, mặc định là
-                        "mgmt0"; gán IP field `ip` /32 vào interface đó rồi
-                        set làm primary IPv4 của device — mỗi device có
-                        object IP riêng dù trùng địa chỉ với device khác,
-                        vd cặp switch/firewall HA dùng chung IP quản lý)
-    - VLAN            (từ `vlan_id` + `vlan_name`, thuộc site nếu có)
-    - Prefix          (từ `prefix`, gán site + vlan tương ứng)
-
-Field nào chưa có ô tương ứng trong NetBox (nếu YAML có thêm field lạ sau
-này) sẽ tự động được gộp vào phần Comments của device để không mất dữ liệu.
-
-Sau khi chạy xong (không phải --dry-run), script ghi ra một file
-netbox_import_manifest_<thời-gian>.json liệt kê đúng những object vừa TẠO
-MỚI (không ghi object có sẵn hay chỉ bị update) — dùng file này với
-rollback_netbox.py để undo nếu cần.
 """
 
 import argparse

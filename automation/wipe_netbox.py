@@ -2,7 +2,7 @@
 """
 ==============================================================================
 Module Name:   wipe_netbox.py
-Description:   Implementation and logic for wipe_netbox.
+Description:   XOÁ SẠCH toàn bộ dữ liệu inventory + IPAM trên NetBox, chuẩn bị import lại từ đầu bằng import_to_netbox.py / import_subnets.py.  Xoá: IP Address, Interface, Device, Rack, Location, Prefix, VLAN,      Device Type, Device Role, Platform, Manufacturer, Site. KHÔNG đụng tới: user, token, custom field definitions (netops_*), plugin,      hay bất kỳ object nào ngoài danh sách trên.  **HÀNH ĐỘNG NÀY KHÔNG THỂ HOÀN TÁC.** Không có rollback cho script này — nếu cần giữ lại dữ liệu, hãy backup database (pg_dump) trước khi chạy.  Cách dùng:     export NETBOX_URL="https://netbox.example.com"     export NETBOX_TOKEN="..."     python3 wipe_netbox.py --dry-run     # xem trước sẽ xoá bao nhiêu object     python3 wipe_netbox.py               # xoá thật, sẽ hỏi xác nhận     python3 wipe_netbox.py --yes         # xoá thật, bỏ qua xác nhận (CẨN THẬN)
 Author:        Mai Tan Duc <ducmai.network@gmail.com>
 Created:       2026-10-10
 Version:       1.0.0
@@ -11,26 +11,6 @@ License:       MIT
 Usage:         python3 wipe_netbox.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
-"""
-
-"""
-XOÁ SẠCH toàn bộ dữ liệu inventory + IPAM trên NetBox, chuẩn bị import lại
-từ đầu bằng import_to_netbox.py / import_subnets.py.
-
-Xoá: IP Address, Interface, Device, Rack, Location, Prefix, VLAN,
-     Device Type, Device Role, Platform, Manufacturer, Site.
-KHÔNG đụng tới: user, token, custom field definitions (netops_*), plugin,
-     hay bất kỳ object nào ngoài danh sách trên.
-
-**HÀNH ĐỘNG NÀY KHÔNG THỂ HOÀN TÁC.** Không có rollback cho script này —
-nếu cần giữ lại dữ liệu, hãy backup database (pg_dump) trước khi chạy.
-
-Cách dùng:
-    export NETBOX_URL="https://netbox.example.com"
-    export NETBOX_TOKEN="..."
-    python3 wipe_netbox.py --dry-run     # xem trước sẽ xoá bao nhiêu object
-    python3 wipe_netbox.py               # xoá thật, sẽ hỏi xác nhận
-    python3 wipe_netbox.py --yes         # xoá thật, bỏ qua xác nhận (CẨN THẬN)
 """
 
 import argparse

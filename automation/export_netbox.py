@@ -2,7 +2,7 @@
 """
 ==============================================================================
 Module Name:   export_netbox.py
-Description:   Implementation and logic for export_netbox.
+Description:   Export Device + Prefix/VLAN từ NetBox ra file YAML — đúng định dạng mà netbox_import.py đọc vào (devices: [...] + subnets: [...]) — dùng để backup hoặc để có bản YAML mới nhất khớp với những gì đang thật sự có trên NetBox.  Cách dùng:     export NETBOX_URL="https://netbox.example.com"     export NETBOX_TOKEN="..."     python3 export_netbox.py inventory_export.yaml  LƯU Ý — vài chỗ không thể khôi phục 100% y hệt file gốc:     - Nếu lúc import model bị để trống, script import đã đặt tạm       "Generic-<vendor>-<kind>" làm Device Type — export ra sẽ thấy đúng       chuỗi placeholder đó trong `model`, không phải model rỗng ban đầu.     - `kind` được suy ngược từ tên Device Role (Access Point -> ap,       Switch -> switch, Firewall -> firewall, Router -> router; role khác       thì lấy chính tên role viết thường, có thể không khớp 100% giá trị       `kind` gốc nếu nhiều kind khác nhau từng dùng chung 1 role).     - Field lạ từng bị gộp vào Comments (theo format "key: value" mỗi dòng)       sẽ được tách lại thành field riêng khi export, nhưng nếu comment gốc       có xuống dòng/định dạng khác thường thì có thể tách sai.
 Author:        Mai Tan Duc <ducmai.network@gmail.com>
 Created:       2026-10-10
 Version:       1.0.0
@@ -11,29 +11,6 @@ License:       MIT
 Usage:         python3 export_netbox.py [options]
 Notes:         Requires Python 3.8+
 ==============================================================================
-"""
-
-"""
-Export Device + Prefix/VLAN từ NetBox ra file YAML — đúng định dạng mà
-netbox_import.py đọc vào (devices: [...] + subnets: [...]) — dùng để backup
-hoặc để có bản YAML mới nhất khớp với những gì đang thật sự có trên NetBox.
-
-Cách dùng:
-    export NETBOX_URL="https://netbox.example.com"
-    export NETBOX_TOKEN="..."
-    python3 export_netbox.py inventory_export.yaml
-
-LƯU Ý — vài chỗ không thể khôi phục 100% y hệt file gốc:
-    - Nếu lúc import model bị để trống, script import đã đặt tạm
-      "Generic-<vendor>-<kind>" làm Device Type — export ra sẽ thấy đúng
-      chuỗi placeholder đó trong `model`, không phải model rỗng ban đầu.
-    - `kind` được suy ngược từ tên Device Role (Access Point -> ap,
-      Switch -> switch, Firewall -> firewall, Router -> router; role khác
-      thì lấy chính tên role viết thường, có thể không khớp 100% giá trị
-      `kind` gốc nếu nhiều kind khác nhau từng dùng chung 1 role).
-    - Field lạ từng bị gộp vào Comments (theo format "key: value" mỗi dòng)
-      sẽ được tách lại thành field riêng khi export, nhưng nếu comment gốc
-      có xuống dòng/định dạng khác thường thì có thể tách sai.
 """
 
 import argparse
