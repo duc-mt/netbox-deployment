@@ -1,3 +1,11 @@
+# ==============================================================================
+# File Name:     inventory_backup_20260924.yaml
+# Description:   Implementation and logic for inventory_backup_20260924.
+# Author:        Mai Tan Duc <ducmai.network@gmail.com>
+# Created:       2026-10-10
+# Version:       1.0.0
+# License:       MIT
+# ==============================================================================
 devices:
 - kind: hub
   vendor: aptek

@@ -1,3 +1,16 @@
+"""
+==============================================================================
+Module Name:   logging.py
+Description:   Implementation and logic for logging.
+Author:        Mai Tan Duc <ducmai.network@gmail.com>
+Created:       2026-10-10
+Version:       1.0.0
+License:       MIT
+==============================================================================
+Usage:         python3 logging.py [options]
+Notes:         Requires Python 3.8+
+==============================================================================
+"""
 # # Remove first comment(#) on each line to implement this working logging example.
 # # Add LOGLEVEL environment variable to netbox if you use this example & want a different log level.
 # from os import environ

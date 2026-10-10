@@ -1,4 +1,15 @@
 #!/bin/bash
+# ==============================================================================
+# Script Name:   docker-entrypoint.sh
+# Description:   Implementation and logic for docker-entrypoint.
+# Author:        Mai Tan Duc <ducmai.network@gmail.com>
+# Created:       2026-10-10
+# Version:       1.0.0
+# License:       MIT
+# ==============================================================================
+# Usage:         ./docker-entrypoint.sh [options] [arguments]
+# Notes:         Automated bash utility script
+# ==============================================================================
 # Runs on every start of the NetBox Docker container
 
 # Stop when an error occurs

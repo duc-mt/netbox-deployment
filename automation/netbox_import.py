@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 """
+==============================================================================
+Module Name:   netbox_import.py
+Description:   Implementation and logic for netbox_import.
+Author:        Mai Tan Duc <ducmai.network@gmail.com>
+Created:       2026-10-10
+Version:       1.0.0
+License:       MIT
+==============================================================================
+Usage:         python3 netbox_import.py [options]
+Notes:         Requires Python 3.8+
+==============================================================================
+"""
+"""
 Import devices + subnet/VLAN (định dạng CMC_NMS_Tool) vào NetBox — MỘT file
 YAML, MỘT script import, MỘT script rollback (gộp import_to_netbox.py +
 import_subnets.py trước đây).

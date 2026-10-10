@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 """
+==============================================================================
+Module Name:   export_netbox.py
+Description:   Implementation and logic for export_netbox.
+Author:        Mai Tan Duc <ducmai.network@gmail.com>
+Created:       2026-10-10
+Version:       1.0.0
+License:       MIT
+==============================================================================
+Usage:         python3 export_netbox.py [options]
+Notes:         Requires Python 3.8+
+==============================================================================
+"""
+"""
 Export Device + Prefix/VLAN từ NetBox ra file YAML — đúng định dạng mà
 netbox_import.py đọc vào (devices: [...] + subnets: [...]) — dùng để backup
 hoặc để có bản YAML mới nhất khớp với những gì đang thật sự có trên NetBox.

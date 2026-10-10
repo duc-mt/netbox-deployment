@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 """
+==============================================================================
+Module Name:   wipe_netbox.py
+Description:   Implementation and logic for wipe_netbox.
+Author:        Mai Tan Duc <ducmai.network@gmail.com>
+Created:       2026-10-10
+Version:       1.0.0
+License:       MIT
+==============================================================================
+Usage:         python3 wipe_netbox.py [options]
+Notes:         Requires Python 3.8+
+==============================================================================
+"""
+"""
 XOÁ SẠCH toàn bộ dữ liệu inventory + IPAM trên NetBox, chuẩn bị import lại
 từ đầu bằng import_to_netbox.py / import_subnets.py.
 

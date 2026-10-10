@@ -1,3 +1,16 @@
+"""
+==============================================================================
+Module Name:   ldap_config.docker.py
+Description:   Implementation and logic for ldap_config.docker.
+Author:        Mai Tan Duc <ducmai.network@gmail.com>
+Created:       2026-10-10
+Version:       1.0.0
+License:       MIT
+==============================================================================
+Usage:         python3 ldap_config.docker.py [options]
+Notes:         Requires Python 3.8+
+==============================================================================
+"""
 from .configuration import read_configurations
 
 _loaded_configurations = read_configurations(

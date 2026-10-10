@@ -1,4 +1,15 @@
 #!/bin/bash
+# ==============================================================================
+# Script Name:   cron_backup_inventory.sh
+# Description:   Implementation and logic for cron_backup_inventory.
+# Author:        Mai Tan Duc <ducmai.network@gmail.com>
+# Created:       2026-10-10
+# Version:       1.0.0
+# License:       MIT
+# ==============================================================================
+# Usage:         ./cron_backup_inventory.sh [options] [arguments]
+# Notes:         Automated bash utility script
+# ==============================================================================
 
 # Load environment variables (NETBOX_URL, NETBOX_TOKEN)
 source /home/duc.mt/.bashrc

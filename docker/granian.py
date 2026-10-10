@@ -1,3 +1,16 @@
+"""
+==============================================================================
+Module Name:   granian.py
+Description:   Implementation and logic for granian.
+Author:        Mai Tan Duc <ducmai.network@gmail.com>
+Created:       2026-10-10
+Version:       1.0.0
+License:       MIT
+==============================================================================
+Usage:         python3 granian.py [options]
+Notes:         Requires Python 3.8+
+==============================================================================
+"""
 from granian.utils.proxies import wrap_wsgi_with_proxy_headers
 from netbox.wsgi import application
 

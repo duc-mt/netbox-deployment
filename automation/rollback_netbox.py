@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 """
+==============================================================================
+Module Name:   rollback_netbox.py
+Description:   Implementation and logic for rollback_netbox.
+Author:        Mai Tan Duc <ducmai.network@gmail.com>
+Created:       2026-10-10
+Version:       1.0.0
+License:       MIT
+==============================================================================
+Usage:         python3 rollback_netbox.py [options]
+Notes:         Requires Python 3.8+
+==============================================================================
+"""
+"""
 Rollback lần chạy netbox_import.py gần nhất bằng file manifest nó tạo ra.
 
 CHỈ xoá đúng những object mà lần chạy đó đã TẠO MỚI (không đụng tới object
